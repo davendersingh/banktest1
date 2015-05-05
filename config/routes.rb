@@ -55,5 +55,6 @@ Rails.application.routes.draw do
   #   end
   Rails.application.routes.draw do
     get "accounts" => "accounts#index"
+    get "accounts/:id" => "accounts#show"
   end
 end

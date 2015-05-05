@@ -1,12 +1,12 @@
 <% @title="New App Home" %>
 
-<h1>Accounts</h1>
+<h1><%= pluralize(@accounts.size, 'Account') %></h1>
 
 <ul>
 <% @accounts.each do |account| %>
   <li>
     <strong><%= account.name %></strong> (<%= account.acc_type %>):
-    <%= account.balance %>
+    <%= format_balance(account) %>
   </li>
 <% end %>
 </ul>

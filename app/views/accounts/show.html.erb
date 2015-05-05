@@ -1,0 +1,11 @@
+<header>
+  <h1><%= @account.name %></h1>
+</header>
+<h2>Type</h2>
+<p>
+  <%= @account.acc_type %>
+</p>
+<h3>Balance</h3>
+<p>
+  <%= number_to_currency(@account.balance) %>
+</p>
