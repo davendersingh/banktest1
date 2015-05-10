@@ -1,15 +1,33 @@
+<style>
+  .Table1 tr:nth-child(odd) {
+    background: #D3D3D3;
+  }
+
+  .Table1 {
+    border: 1px solid black;
+    width: 400px;
+  }
+
+  .Table1 span {
+    padding: 15px;
+    width: 33.33%;
+  }
+</style>
+
 <% @title="New App Home" %>
-
 <h1><%= pluralize(@accounts.size, 'Account') %></h1>
-
-<ul>
-<% @accounts.each do |account| %>
-  <li>
-    <strong><%= account.name %></strong> (<%= account.acc_type %>):
-    <%= format_balance(account) %>
-  </li>
-<% end %>
-</ul>
+<% @totals = 0 %>
+<table class ="Table1">
+  <% @accounts.each do |account| %>
+    <% @totals += account.balance %>
+      <tr>
+        <td><span><strong><%= account.name  %></strong></span></td>
+        <td><span>(<%= account.acc_type %>)</span></td>
+        <td><span><%= format_balance(account) %></span></td>
+      </tr>
+  <% end %>
+</table>
+<h2>Combined totals | <%= number_to_currency(@totals) %></h2>
 
 <!-- /. added template below  -->
     <div id="wrapper">
