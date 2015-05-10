@@ -56,5 +56,13 @@ Rails.application.routes.draw do
   Rails.application.routes.draw do
     get "accounts" => "accounts#index"
     get "accounts/:id" => "accounts#show"
+    #temporary for demo template pages
+    get "ui" => "accounts#ui"
+    get "tab-panel" => "accounts#tab-panel"
+    get "index" => "accounts#index"
+    get "chart" => "accounts#chart"
+    get "table" => "accounts#table"
+    get "form" => "accounts#form"
+    get "blank" => "accounts#blank"
   end
 end
