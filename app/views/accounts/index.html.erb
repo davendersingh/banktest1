@@ -44,7 +44,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> <%= Time.now.strftime("Last login: %a, %d %b %Y at %I:%M%p") %> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -86,8 +86,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Admin Dashboard</h2>   
-                        <h5>Welcome Jhon Deo , Love to see you back. </h5>
+                     <center><h2><i>John Doe</i></h2></center>
+                     <center><h3>&#8212; Financial Summary, <%= Time.now.strftime("%d %b %Y") %> &#8212;</h3></center>   
                     </div>
                 </div>              
                  <!-- /. ROW  -->
