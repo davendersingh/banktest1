@@ -1,8 +1,6 @@
-== README
+## Money Map: Personal Finance and Budgeting Software
 
 I've been using Microsoft Money for 10+ years but it's always been a pain that it is only available on Windows OS. Now that I primary use Mac and Linux, I'd like to have something just as useful but cross platform compatible. Plus I'd like to be able to use it on mobile devices. There are many paid services that already offer this, but I wanted to make a free open source version. I'll try to update this readme as parts of the project are completed. Currently I don't have a lot of time to commit to the project, so progress may be slow.
-
-## Money Map: Personal Finance and Budgeting Software
 
 The software will be easy to use so people of all ages...adults use to to manage their personal or family finances and children can use it to learn how to budget and save.
 
@@ -57,7 +55,7 @@ Id like the desktop version of this to be based on the Node.js platform and be w
 - [ ] Support ticket location for easy submission and tracking
 - [ ] Desktop / Web app sync
 
-## Paid Version
+### Paid Version
 The following features might be released in a paid version if not in the free open source version.
 
 - [ ] Investment Accounts
@@ -66,9 +64,7 @@ The following features might be released in a paid version if not in the free op
 - [ ] IRAs (static)
 
 
-## Concerns
-I have no idea how I am going to do this. The only extensive single language programing training I have is Ruby. After that it is some Rails, HTML, and CSS. I was taught Java....more than 10 years ago and never used it. I have some C# and JavaScript knowledge but will need a lot more to complete this project.
-
+### Concerns
 I will be learning along the way, using whatever tools I can find. In the end I hope to provide an easy to maintain application with readable code.
 
 Support for users will be limited for the free version for now.
