@@ -4,7 +4,7 @@ This is my project to build a personal financial management software to replace 
 
 This is a project for an open source personal finance money management application.
 
-#Money Map: Personal Finance and Budgeting Software
+Money Map: Personal Finance and Budgeting Software
 
 This is a project for creating a cross platform compatible personal finance and budgeting software to help manage money. I have been a long time user of financial software for budgeting. That software includes MS Money 2003 Deluxe, dsbudget, YNAB, MoneyDance, and KMyMoney.
 
@@ -13,8 +13,9 @@ The software will be easy to use so people of all ages...adults use to to manage
 Id like the desktop version of this to be based on the Node.js platform and be written in HTML, JavaScript, and CSS. That will be the next step after comleting the Rails version. This feature list is a mix of features to be added in the web and desktop version.
 
 ## Features Planned 
-[ ] =incomplete, [x] =complete
-###Priority 1 Features
+x =complete
+
+### Priority 1 Features
 - [ ] Home page with overview and profile summary
 - [ ] Implement chartkick.com or charts.js
 - [ ] Cross platform compatible with Windows, Mac, Linux, iOS, Android OS
@@ -51,7 +52,7 @@ Id like the desktop version of this to be based on the Node.js platform and be w
 - [ ] Create Getting started video
 - [ ] Create feature video
 
-###Priority 2 Features
+### Priority 2 Features
 - [ ] Built in loan comparison calculators
 - [ ] Goal to purchase / saving progress page
 - [ ] Produce Amortization Charts
@@ -60,7 +61,7 @@ Id like the desktop version of this to be based on the Node.js platform and be w
 - [ ] Support ticket location for easy submission and tracking
 - [ ] Desktop / Web app sync
 
-##Paid Version
+## Paid Version
 The following features might be released in a paid version if not in the free open source version.
 
 - [ ] Investment Accounts
