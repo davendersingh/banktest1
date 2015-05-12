@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem "chartkick"
+gem 'groupdate'
+
+gem 'chartkick'
 
 gem 'twitter-bootstrap-rails'
 

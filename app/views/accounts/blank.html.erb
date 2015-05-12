@@ -37,7 +37,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+                    <%= image_tag "find_user.png", class: "user-image img-responsive" %>
 					</li>
 				
 					
@@ -74,7 +74,46 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <div class="col-md-12">
                      <h2>Blank Page</h2>   
                         <h5>Welcome Jhon Deo , Love to see you back. </h5>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Net Worth...
+                        </div>
+                          <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                  
+                  <div class="col-md-6 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Pie chart example
+                        </div>
+                          <div class="panel-body">
+                            <p><%= pie_chart @accounts.group(:name).sum('balance') %>
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                        <div>
+                          <h3>Pie chart example 2</h3>
                        <%= pie_chart @accounts.group(:name).sum('balance') %>
+                       </div>
+                       <div>
+                        <h3>Horizontal bar chart example (spending tracker)</h3>
+                          <%= bar_chart @accounts.group(:name).sum('balance') %>
+                       </div>
+                       <div>
+                        <h3>Vertical bar chart example</h3>
+                          <%= column_chart @accounts.group(:name).sum('balance') %>
+                       </div>
                        
                     </div>
                 </div>
